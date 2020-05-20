@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+$font: '';
+$base-font-size: 16px;
+$base-path: '../';
+//Colors
+$white-color: #fff;
+$black-color: #34323A;
+//Font weight
+$font-weight: (
+    'thin': 100,
+    'light': 300,
+    'normal': normal,
+    'medium': 500,
+    'bold': bold
+);
