@@ -16,7 +16,7 @@ html {
     box-sizing: border-box;
 }
 b, strong {
-    @include font-weight('semi');
+    @include font-weight('black');
 }
 body {
     @include font();

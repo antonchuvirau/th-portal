@@ -1,0 +1,12 @@
+.th-auth {
+    @include flex(row, stretch, flex-start);
+    &__col{
+        width: 50%;
+        flex: 1 1 auto;
+    }
+    &__title{
+        @include flex(column, flex-start, center);
+        padding: 30px;
+        padding-left: 70px;
+    }
+}
