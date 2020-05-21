@@ -10,7 +10,7 @@
 }
 
 @mixin font-weight($weight) {
-  @if $weight=='normal' {
+  @if $weight=='regular' {
     font-weight: map-get($font-weight, $weight);
   }
   @else if $weight=='thin' {
@@ -19,10 +19,13 @@
   @else if $weight=='light' {
     font-weight: map-get($font-weight, $weight);
   }
-  @else if $weight=='bold' {
+  @else if $weight=='medium' {
     font-weight: map-get($font-weight, $weight);
   }
-  @else if $weight=='medium' {
+  @else if $weight=='semi' {
+    font-weight: map-get($font-weight, $weight);
+  }
+  @else if $weight=='black' {
     font-weight: map-get($font-weight, $weight);
   }
 }

@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
-$font: '';
+$font: 'Museo Sans Cyrl';
 $base-font-size: 16px;
 $base-path: '../';
 //Colors
@@ -10,8 +10,8 @@ $black-color: #34323A;
 //Font weight
 $font-weight: (
     'thin': 100,
-    'light': 300,
-    'normal': normal,
+    'regular': 300,
     'medium': 500,
-    'bold': bold
+    'semi': 700,
+    'black': 900 
 );
