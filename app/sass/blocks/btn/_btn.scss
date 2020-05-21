@@ -1,0 +1,18 @@
+.btn {
+    background: $primary-color-lighter;
+    padding: 0 25px;
+    height: 55px;
+    border-radius: 6px;
+    color: $white-color;
+    @include font-weight('regular');
+    font-size: 1.8rem;
+    line-height: 1.22;
+    text-decoration: none;
+    cursor: pointer;
+    &:active {
+        background: darken($primary-color-lighter, 5%);
+    }
+    &:focus {
+        background: darken($primary-color-lighter, 3%);
+    }
+}

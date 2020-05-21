@@ -36,7 +36,7 @@
         margin: 0;
         margin-top: 10px;
         & a{
-            color: $primary-color-lighter;
+            color: darken($primary-color-lighter, 1%);
             text-decoration: none;
             font-size: 1.8rem;
             @include font-weight('medium');
@@ -48,5 +48,25 @@
     }
     &__btn {
         margin-top: 25px;
+        width: 100%;
+    }
+    &__footer {
+        margin-top: 30px;
+    }
+    &__note {
+        text-align: center;
+        margin: 0;
+        color: $white-color;
+        line-height: 1.19;
+        & a {
+            text-decoration: none;
+            font-size: 2rem;
+            @include font-weight('medium');
+            color: darken($primary-color-lighter, 1%);
+            margin-top: 5px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
