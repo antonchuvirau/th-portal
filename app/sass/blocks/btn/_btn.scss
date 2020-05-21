@@ -15,4 +15,9 @@
     &:focus {
         background: darken($primary-color-lighter, 3%);
     }
+    &:disabled {
+        opacity: .5;
+        pointer-events: none;
+        cursor: not-allowed;
+    }
 }
