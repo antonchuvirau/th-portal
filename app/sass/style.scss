@@ -14,6 +14,8 @@
 'base/helpers';
 // 4. Blocks
 // @import 'blocks/header/header';
-// 5. Themes
+// 5. Pages
+@import 'pages/sign_in';
+// 6. Themes
 @import 'themes/default',
 'themes/media';
