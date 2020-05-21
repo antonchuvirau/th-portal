@@ -48,6 +48,7 @@ input {
     @extend button;
     cursor: text;
     padding: 0 15px;
+    @include font-weight('regular');
 }
 textarea {
     @extend button;
@@ -64,22 +65,26 @@ table {
     border-collapse: collapse;
 }
 ::-webkit-input-placeholder {
-    font-size: 1.6rem;
-    color: $black-color;
+    font-size: 1.8rem;
+    color: $white-color;
+    @include font-weight('regular');
 }
 ::-moz-placeholder {
-    font-size: 1.6rem;
-    color: $black-color;
+    font-size: 1.8rem;
+    color: $white-color;
+    @include font-weight('regular');
     opacity: 1;
 }
 :-moz-placeholder {
-    font-size: 1.6rem;
-    color: $black-color;
+    font-size: 1.8rem;
+    color: $white-color;
+    @include font-weight('regular');
     opacity: 1;
 }
 :-ms-input-placeholder {
-    font-size: 1.6rem;
-    color: $black-color;
+    font-size: 1.8rem;
+    color: $white-color;
+    @include font-weight('regular');
 }
 :focus::-webkit-input-placeholder {
     color: transparent;

@@ -1,15 +1,16 @@
-.th-auth {
+.auth {
     @include flex(row, stretch, flex-start);
-    &__col{
+    &__col {
         width: 50%;
         flex: 1 1 auto;
         background: $primary-color;
     }
-    &__title{
+    &__title {
         @include flex(column, flex-start, center);
         padding: 25px;
         padding-left: 70px;
-        &-value{
+        background: rgba($primary-color, .6);
+        &-value {
             font-size: 6.4rem;
             line-height: 1;
             @include font-weight('regular');
@@ -17,5 +18,13 @@
             color: $white-color;
             text-transform: uppercase;
         }
+    }
+    &__container {
+        padding: 40px;
+        padding-top: 50px;
+    }
+    &__form {
+        max-width: 375px;
+        margin: 0 auto;
     }
 }

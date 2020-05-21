@@ -13,7 +13,8 @@
 'base/base',
 'base/helpers';
 // 4. Blocks
-@import 'blocks/th-auth/th-auth';
+@import 'blocks/auth/auth',
+'blocks/form/form';
 // 5. Pages
 @import 'pages/sign_in';
 // 6. Themes

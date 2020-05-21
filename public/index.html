@@ -23,15 +23,32 @@
 </head>
 
 <body>
-    <div class="th-wrapper">
+    <div class="wrapper">
         <!-- Begin main -->
-        <main class="th-wrapper__main">
+        <main class="wrapper__main">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="th-auth">
-                            <div class="th-auth__col th-auth__title"><h1 class="th-auth__title-value">Welcome<br>to the<br><b>TradeHelp Office Portal</b></h1></div>
-                            <div class="th-auth__col th-auth__container"></div>
+                        <div class="auth">
+                            <div class="auth__col auth__title"><h1 class="auth__title-value">Welcome<br>to the<br><b>TradeHelp Office Portal</b></h1></div>
+                            <div class="auth__col auth__container">
+                                <form class="form sign-in-form auth__form">
+                                    <header class="form__header"><p class="form__title">Sign In</p></header>
+                                    <div class="form__input">
+                                        <input type="email" placeholder="Email" name="email">
+                                    </div>
+                                    <div class="form__input">
+                                        <input type="password" placeholder="Password" name="password">
+                                    </div>
+                                    <p class="form__help-link">
+                                        <a href="#">Forgot password?</a>
+                                    </p>
+                                    <button type="submit" class="btn form__btn sign-in">Continue</button>
+                                    <footer class="form__footer">
+                                        <p class="form__note">Don’t have an account?<a href="#">Sign Up</a></p>
+                                    </footer>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
