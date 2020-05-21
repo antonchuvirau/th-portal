@@ -5,6 +5,7 @@ const sass = require('gulp-sass');
 const concat = require('gulp-concat');
 const clean = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
 const browserSync = require('browser-sync').create();
 const del = require('del');
 const combine = require('stream-combiner2').obj;
@@ -20,6 +21,9 @@ gulp.task('styles', function(){
 
 gulp.task('scripts', function(){
     return gulp.src(['app/js/plugins.js', 'app/js/main.js'])
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
     .pipe(concat('scripts.js'))
     .pipe(uglify())
     .pipe(gulp.dest('public/js/'))
