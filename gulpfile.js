@@ -20,9 +20,9 @@ gulp.task('styles', function(){
 });
 
 gulp.task('scripts', function(){
-    return gulp.src(['app/js/plugins.js', 'app/js/main.js'])
+    return gulp.src('app/js/*.js')
     .pipe(babel({
-        presets: ['@babel/env']
+        presets: ['es2015']
     }))
     .pipe(concat('scripts.js'))
     .pipe(uglify())
