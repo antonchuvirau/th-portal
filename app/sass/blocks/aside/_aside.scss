@@ -1,0 +1,11 @@
+.aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc((100% - 1152px)/2 + 192px);
+    background: $primary-color;
+    z-index: 10;
+    padding: 15px 0;
+    padding-bottom: 30px;
+    box-shadow: inset -5px 0 25px rgba($black-color, .25);
+}
