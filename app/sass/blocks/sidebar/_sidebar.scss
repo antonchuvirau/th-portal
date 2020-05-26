@@ -54,15 +54,18 @@
             line-height: 1.2;
             color: $white-color;
             padding: 24px 16px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
             & svg {
                 flex-shrink: 0;
                 margin-right: 16px;
             }
+            &:hover {
+                background: $primary-color-darker;
+            }
             &_active {
                 background: $primary-color-darker;
                 box-shadow: inset 0 4px 8px rgba($dark-color, .1);
-                border-top-left-radius: 3px;
-                border-bottom-left-radius: 3px;
             }
         }
     }
