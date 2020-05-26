@@ -1,0 +1,22 @@
+.notification {
+    &__btn {
+        @include flex(row, center, center);
+        position: relative;
+    }
+    &__counter {
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        margin: 0;
+        width: 16px;
+        height: 16px;
+        background: $red-color;
+        border-radius: 50%;
+        z-index: 1;
+        font-size: 1.2rem;
+        color: $white-color;
+        @include font-weight('semi');
+        line-height: 16px;
+        text-align: center;
+    }
+}

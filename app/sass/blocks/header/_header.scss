@@ -1,0 +1,9 @@
+.header {
+    padding: 12px 0;
+    &__grid {
+        @include flex(row, center, flex-end);
+    }
+    &__notification {
+        margin-right: 15px;
+    }
+}

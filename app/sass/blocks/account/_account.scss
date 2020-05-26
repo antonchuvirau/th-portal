@@ -1,0 +1,11 @@
+.account {
+    @include flex(row, center, flex-start);
+    text-decoration: none;
+    &__name {
+        margin: 0;
+        @include font-weight('medium');
+        color: $secondary-color;
+        line-height: 1.19;
+        margin-left: 15px;
+    }
+}
