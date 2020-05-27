@@ -1,0 +1,40 @@
+.search-field {
+    @include flex(row, stretch, flex-start);
+    &__wrapper {
+        flex: 1 1 auto;
+        position: relative;
+    }
+    &__input {
+        height: 55px;
+        width: 100%;
+        padding-right: 72px;
+    }
+    &__option-btn {
+        width: 100%;
+        max-width: 160px;
+        margin-left: 16px;
+    }
+    &__btn {
+        @include flex(row, center, center);
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 57px;
+        height: 100%;
+        border-top-right-radius: 6px;
+        border-bottom-right-radius: 6px;
+        background: $primary-color-lighter;
+        z-index: 1;
+        &:hover {
+            background: darken($primary-color-lighter, 3%);
+        }
+        &:active {
+            background: darken($primary-color-lighter, 5%);
+        }
+        &:disabled {
+            opacity: .5;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+    }
+}
