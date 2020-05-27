@@ -9,11 +9,11 @@
     line-height: 1.22;
     text-decoration: none;
     cursor: pointer;
+    &:hover {
+        background: darken($primary-color-lighter, 3%);
+    }
     &:active {
         background: darken($primary-color-lighter, 5%);
-    }
-    &:focus {
-        background: darken($primary-color-lighter, 3%);
     }
     &:disabled {
         opacity: .5;
