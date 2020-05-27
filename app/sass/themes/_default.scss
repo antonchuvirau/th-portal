@@ -27,13 +27,47 @@
     &__title {
         font-size: 3.2rem;
         line-height: 1.19;
-        @include font-weight('regular');
+        @include font-weight('thin');
         margin: 0;
+    }
+    &__prev-page-btn {
+        position: absolute;
+        bottom: calc(100% + 5px);
+        left: 0;
+    }
+    &__footer {
+        margin-top: 25px;
     }
 }
 
 .customers-template {
     &__table {
         margin-top: 30px;
+    }
+}
+
+.prev-page-btn {
+    @include flex(row, center, flex-start);
+    color: $primary-color-lighter;
+    text-transform: uppercase;
+    line-height: 1.2;
+    @include font-weight('regular');
+    &__icon {
+        flex-shrink: 0;
+        margin-right: 7px;
+    }
+}
+
+.group {
+    @include flex(row, flex-start, flex-start);
+    &__col {
+        flex: 1 1 auto;
+        margin-right: 25px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &-2 {
+            width: calc((100%/2));
+        }
     }
 }
