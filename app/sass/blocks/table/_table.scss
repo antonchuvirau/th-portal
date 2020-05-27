@@ -1,0 +1,21 @@
+.table {
+    & th {
+        font-size: 1.6rem;
+        @include font-weight('medium');
+        line-height: 1.19;
+        text-align: left;
+    }
+    & td {
+        font-size: 1.6rem;
+        line-height: 1.19;
+        text-align: left;
+        padding: 25px 0;
+        @include font-weight('thin');
+        border-bottom: 1px solid $gray-color;
+    }
+    & tr:last-child {
+        & td {
+            border-bottom: none;
+        }
+    }
+}
