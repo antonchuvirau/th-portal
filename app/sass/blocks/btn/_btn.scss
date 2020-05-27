@@ -16,6 +16,14 @@
             width: 160px;
         }
     }
+    &_size {
+        &-s {
+            height: 35px;
+            border-radius: 3px;
+            font-size: 1.4rem;
+            @include font-weight('medium');
+        }
+    }
     &:hover {
         background: darken($primary-color-lighter, 3%);
     }

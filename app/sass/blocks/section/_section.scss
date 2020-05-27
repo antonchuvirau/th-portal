@@ -1,0 +1,20 @@
+.section {
+    &__header {
+        @include flex(row, center, flex-start);
+        padding-bottom: 10px;
+        border-bottom: 1px solid $gray-color;
+        margin-bottom: 25px;
+    }
+    &__title {
+        margin: 0;
+        font-size: 2rem;
+        line-height: 1.2;
+        @include font-weight('semi');
+        text-transform: uppercase;
+        color: $primary-color;
+    }
+    &__btn {
+        margin-left: auto;
+        text-transform: capitalize;
+    }
+}
