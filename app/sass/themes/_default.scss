@@ -81,3 +81,37 @@
         }
     }
 }
+
+.drag-drop-section {
+    &__header {
+        padding-bottom: 0;
+        margin-bottom: 15px;
+        border-bottom: none;
+    }
+    &__grid {
+        background: $white-color;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px 0 rgba($secondary-color, .15);
+        padding: 15px;
+    }
+    &__container {
+        @include flex(column, center, center);
+        height: 160px;
+        width: 100%;
+        border-radius: 15px;
+        border: 1px dashed $primary-color-lighter;
+        &-text {
+            margin: 0;
+            max-width: 200px;
+            width: 100%;
+            @include font-weight('semi');
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            text-align: center;
+            color: $primary-color-lightest;
+            margin-top: 10px;
+            line-height: 1.2;
+            pointer-events: none;
+        }
+    }
+}
