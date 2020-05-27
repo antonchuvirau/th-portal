@@ -1,0 +1,10 @@
+.add-customer-template {
+    &__footer {
+        &-btn {
+            margin-right: 15px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

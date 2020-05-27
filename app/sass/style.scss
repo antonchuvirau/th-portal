@@ -25,7 +25,9 @@
 'blocks/table/table',
 'blocks/input-field/input-field';
 // 5. Pages
-@import 'pages/sign_in';
+@import 'pages/sign_in',
+'pages/customers',
+'pages/add-customer';
 // 6. Themes
 @import 'themes/default',
 'themes/media';

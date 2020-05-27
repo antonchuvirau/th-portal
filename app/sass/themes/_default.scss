@@ -40,12 +40,6 @@
     }
 }
 
-.customers-template {
-    &__table {
-        margin-top: 30px;
-    }
-}
-
 .prev-page-btn {
     @include flex(row, center, flex-start);
     color: $primary-color-lighter;
