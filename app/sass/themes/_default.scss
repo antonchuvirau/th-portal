@@ -29,6 +29,7 @@
         line-height: 1.19;
         @include font-weight('thin');
         margin: 0;
+        text-transform: capitalize;
     }
     &__prev-page-btn {
         position: absolute;
@@ -69,5 +70,11 @@
     }
     &__row {
         margin-bottom: 30px;
+    }
+    &__btn {
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }

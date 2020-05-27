@@ -23,11 +23,13 @@
 'blocks/sidebar/sidebar',
 'blocks/search-field/search-field',
 'blocks/table/table',
-'blocks/input-field/input-field';
+'blocks/input-field/input-field',
+'blocks/section/section';
 // 5. Pages
 @import 'pages/sign_in',
 'pages/customers',
-'pages/add-customer';
+'pages/add-customer',
+'pages/customer-details';
 // 6. Themes
 @import 'themes/default',
 'themes/media';
