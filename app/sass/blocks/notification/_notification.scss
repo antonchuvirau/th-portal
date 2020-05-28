@@ -35,15 +35,81 @@
         z-index: 1;
         width: 290px;
         background: $white-color;
-        padding: 15px;
+        padding: 10px 15px;
+        padding-top: 23px;
         transform: scale3d(0,0,0);
         opacity: 0;
         pointer-events: none;
+        &-title {
+            margin: 0;
+            @include font-weight('medium');
+            line-height: 1.2;
+            max-width: 205px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 30px;
+            text-transform: capitalize;
+        }
         &_state {
             &-opened {
                 opacity: 1;
                 transform: scale3d(1,1,1);
                 pointer-events: auto;
+            }
+        }
+        &-btn {
+            @include font-weight('medium');
+            text-transform: capitalize;
+            color: $primary-color-lighter;
+            width: 100%;
+            height: 40px;
+            &:hover {
+                color: darken($primary-color-lighter, 3%);
+            }
+            &:active {
+                color: darken($primary-color-lighter, 5%);
+            }
+            &:disabled {
+                color: $gray-color;
+                cursor: not-allowed;
+                pointer-events: none;
+            }
+        }
+    }
+    &__list {
+        &-item {
+            @include flex(column, flex-start, flex-start);
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                top: 100%;
+                left: 0;
+                background: icon('th-icon-line.svg') no-repeat 50%;
+            }
+            &:last-child {
+                margin-bottom: 0;
+                &::after {
+                    content: none;
+                }
+            }
+            &-name {
+                margin: 0;
+                font-size: 1.4rem;
+                line-height: 1.2;
+                color: $primary-color-lighter;
+            }
+            &-text {
+                margin: 0;
+                font-size: 1.4rem;
+                line-height: 1.2;
+                @include font-weight('thin');
+                margin-top: 3px;
             }
         }
     }
