@@ -7,4 +7,12 @@
             margin-right: 0;
         }
     }
+    &__label {
+        font-size: 1.4rem;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: $primary-color-lighter;
+        @include font-weight('medium');
+        margin-bottom: 10px;
+    }
 }

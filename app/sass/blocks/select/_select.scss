@@ -1,0 +1,30 @@
+.select {
+    position: relative;
+    & select {
+        width: 100%;
+        border-radius: 6px;
+        border: 1px solid $primary-color-lighter;
+        height: 55px;
+        padding: 0 15px;
+        font-size: 1.6rem;
+        @include font-weight('thin');
+        padding-right: 35px;
+        position: relative;
+        z-index: 1;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: icon('th-icon-arrow.svg') no-repeat 50%;
+        top: 50%;
+        margin-top: -7.5px;
+        right: 15px;
+    }
+    &_width {
+        &-fixed {
+            width: 160px;
+        }
+    }
+}
