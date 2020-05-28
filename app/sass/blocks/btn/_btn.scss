@@ -2,7 +2,7 @@
     display: inline-block;
     vertical-align: middle;
     background: $primary-color-lighter;
-    padding: 0 20px;
+    padding: 0 10px;
     height: 55px;
     border-radius: 6px;
     color: $white-color;
@@ -19,6 +19,7 @@
     &_size {
         &-s {
             height: 35px;
+            padding: 0 20px;
             border-radius: 3px;
             font-size: 1.4rem;
             @include font-weight('medium');
@@ -31,7 +32,7 @@
         background: darken($primary-color-lighter, 5%);
     }
     &:disabled {
-        opacity: .5;
+        background: $gray-color;
         pointer-events: none;
         cursor: not-allowed;
     }
@@ -49,7 +50,9 @@
                 box-shadow: 0 2px 15px 0 rgba($secondary-color, 0.1);
             }
             &:disabled {
-                opacity: .5;
+                background: $gray-color;
+                box-shadow: none;
+                color: $white-color;
                 pointer-events: none;
                 cursor: not-allowed;
             }

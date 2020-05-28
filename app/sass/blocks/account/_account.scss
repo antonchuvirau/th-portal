@@ -4,8 +4,15 @@
     &__name {
         margin: 0;
         @include font-weight('medium');
-        color: $secondary-color;
+        color: $primary-color-lighter;
         line-height: 1.19;
         margin-left: 15px;
+    }
+    &__icon {
+        @include flex(row, center, center);
+        font-size: 2.4rem;
+        color: $primary-color-lighter;
+        @include font-weight('black');
+        text-transform: uppercase;
     }
 }
