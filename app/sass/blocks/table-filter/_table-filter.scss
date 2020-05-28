@@ -1,0 +1,10 @@
+.table-filter {
+    @include flex(row, stretch, flex-start);
+    &__item {
+        margin-right: 15px;
+        @include flex(column, flex-start, flex-start);
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

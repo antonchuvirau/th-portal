@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Add customer</title>
+    <title>Service Plans</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -70,100 +70,89 @@
     </header>
     <!-- End header -->
     <!-- Begin main -->
-    <main class="main template add-customer-template">
+    <main class="main template service-plans-template">
         <div class="container">
             <div class="row">
                 <div class="col-10 offset-2">
                     <div class="template__wrapper">
                         <header class="template__header">
-                            <button type="button" class="prev-page-btn template__prev-page-btn">
-                                <svg class="prev-page-btn__icon" width="7" height="13" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6 1L1 6L6 11" stroke="#2EA9E1" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                Back
-                            </button>
-                            <h1 class="template__title">Add Customer</h1>
+                            <h1 class="template__title">Service plans</h1>
                         </header>
                         <div class="template__grid">
-                            <div class="group">
-                                <div class="group__col group__col-2">
-                                    <div class="input-field group__row">
-                                        <label class="input-field__label" for="title">Title</label>
-                                        <input type="text" placeholder="Title" name="title" id="title" class="input-field__input">
+                            <div class="search-field">
+                                <div class="search-field__wrapper">
+                                    <input class="search-field__input" type="text" name="s" placeholder="Enter a plan ref, customer name, address or postcode">
+                                </div>
+                                <button class="btn search-field__option-btn" type="button">New plan</button>
+                            </div>
+                            <div class="table service-plans-template__table">
+                                <div class="table-filter table__filter">
+                                    <div class="table-filter__item">
+                                        <label class="table-filter__label" for="status-filter">Status filter</label>
+                                        <select class="select table-filter__select" name="status-filter" id="status-filter">
+                                            <option value="0">Plan Sent</option>
+                                            <option value="1">Plan Sent</option>
+                                            <option value="2">Plan Sent</option>
+                                        </select>
                                     </div>
-                                    <div class="group group__row">
-                                        <div class="group__col group__col-2">
-                                            <div class="input-field">
-                                                <label class="input-field__label" for="first-name">First name</label>
-                                                <input type="text" placeholder="First name" name="first-name" id="first-name" class="input-field__input">
-                                            </div>
-                                        </div>
-                                        <div class="group__col group__col-2">
-                                            <div class="input-field">
-                                                <label class="input-field__label" for="last-name">Last name</label>
-                                                <input type="text" placeholder="Last name" name="last-name" id="last-name" class="input-field__input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="input-field group__row">
-                                        <label class="input-field__label" for="email">Email</label>
-                                        <input type="email" placeholder="Email" name="email" id="email" class="input-field__input">
-                                    </div>
-                                    <div class="group group__row">
-                                        <div class="group__col group__col-2">
-                                            <div class="input-field">
-                                                <label class="input-field__label" for="mobile-number">Mobile number</label>
-                                                <input type="text" placeholder="Mobile number" name="mobile-number" id="mobile-number" class="input-field__input">
-                                            </div>
-                                        </div>
-                                        <div class="group__col group__col-2">
-                                            <div class="input-field">
-                                                <label class="input-field__label" for="phone-number">Phone number</label>
-                                                <input type="text" placeholder="Phone number" name="phone-number" id="phone-number" class="input-field__input">
-                                            </div>
-                                        </div>
+                                    <div class="table-filter__item">
+                                        <label class="table-filter__label" for="status-filter">DD Status filter</label>
+                                        <select class="select table-filter__select" name="dd-tatus-filter" id="dd-tatus-filter">
+                                            <option value="0">Complete</option>
+                                            <option value="1">Complete</option>
+                                            <option value="2">Complete</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="group__col group__col-2">
-                                    <div class="input-field group__row">
-                                        <label class="input-field__label" for="address-1">Address line 1</label>
-                                        <input type="text" placeholder="Address 1" name="address-1" id="address-1" class="input-field__input">
-                                    </div>
-                                    <div class="input-field group__row">
-                                        <label class="input-field__label" for="address-2">Address line 2</label>
-                                        <input type="text" placeholder="Address 2" name="address-2" id="address-2" class="input-field__input">
-                                    </div>
-                                    <div class="input-field group__row">
-                                        <label class="input-field__label" for="address-3">Address line 3</label>
-                                        <input type="text" placeholder="Address 3" name="address-3" id="address-3" class="input-field__input">
-                                    </div>
-                                    <div class="group group__row">
-                                        <div class="group__col group__col-3">
-                                            <div class="input-field">
-                                                <label class="input-field__label" for="country">Country</label>
-                                                <input type="text" placeholder="Country" name="country" id="country" class="input-field__input">
-                                            </div>
-                                        </div>
-                                        <div class="group__col group__col-3">
-                                            <div class="input-field">
-                                                <label class="input-field__label" for="town">Town</label>
-                                                <input type="text" placeholder="Town" name="town" id="town" class="input-field__input">
-                                            </div>
-                                        </div>
-                                        <div class="group__col group__col-3">
-                                            <div class="input-field">
-                                                <label class="input-field__label" for="postcode">Postcode</label>
-                                                <input type="text" placeholder="Postcode" name="postcode" id="postcode" class="input-field__input">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <table>
+                                    <tr>
+                                        <th>Plan Ref</th>
+                                        <th>Customer Name</th>
+                                        <th>Address</th>
+                                        <th>Plan Name</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                        <th>DD Status</th>
+                                    </tr>
+                                    <tr>
+                                        <td>7189446</td>
+                                        <td>Nick B.</td>
+                                        <td>52 Wayland Road</td>
+                                        <td>Essential Protect</td>
+                                        <td>21.06.2020</td>
+                                        <td>Plan Sent</td>
+                                        <td>Complete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7189446</td>
+                                        <td>Nick B.</td>
+                                        <td>52 Wayland Road</td>
+                                        <td>Essential Protect</td>
+                                        <td>21.06.2020</td>
+                                        <td>Plan Sent</td>
+                                        <td>Complete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7189446</td>
+                                        <td>Nick B.</td>
+                                        <td>52 Wayland Road</td>
+                                        <td>Essential Protect</td>
+                                        <td>21.06.2020</td>
+                                        <td>Plan Sent</td>
+                                        <td>Complete</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7189446</td>
+                                        <td>Nick B.</td>
+                                        <td>52 Wayland Road</td>
+                                        <td>Essential Protect</td>
+                                        <td>21.06.2020</td>
+                                        <td>Plan Sent</td>
+                                        <td>Complete</td>
+                                    </tr>
+                                </table>
                             </div>
                         </div>
-                        <footer class="template__footer group">
-                            <button type="button" class="btn group__btn btn_width-fixed">Add Customer</button>
-                            <button type="button" class="btn group__btn btn_width-fixed btn_action-cancel">Cancel</button>
-                        </footer>
                     </div>
                 </div>
             </div>

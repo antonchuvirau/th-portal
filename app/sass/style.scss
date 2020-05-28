@@ -24,12 +24,14 @@
 'blocks/search-field/search-field',
 'blocks/table/table',
 'blocks/input-field/input-field',
-'blocks/section/section';
+'blocks/section/section',
+'blocks/table-filter/table-filter';
 // 5. Pages
 @import 'pages/sign_in',
 'pages/customers',
 'pages/add-customer',
-'pages/customer-details';
+'pages/customer-details',
+'pages/service-plans';
 // 6. Themes
 @import 'themes/default',
 'themes/media';
