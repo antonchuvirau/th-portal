@@ -11,3 +11,9 @@ document.body.addEventListener('click', (event) => {
         }
     }
 });
+//Opening notification's list
+let notificationBtnElement = document.querySelector('.notification__btn');
+notificationBtnElement.addEventListener('click', (event) => {
+    notificationBtnElement.classList.toggle('notification__btn_state-active');
+    notificationBtnElement.nextElementSibling.classList.toggle('notification__wrapper_state-opened');
+});

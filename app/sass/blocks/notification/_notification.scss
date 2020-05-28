@@ -1,7 +1,16 @@
 .notification {
+    position: relative;
     &__btn {
         @include flex(row, center, center);
         position: relative;
+        z-index: 2;
+        border: 1px solid transparent;
+        &_state {
+            &-active {
+                box-shadow: none;
+                border: 1px solid $primary-color-lighter;
+            }
+        }
     }
     &__counter {
         position: absolute;
@@ -18,5 +27,24 @@
         @include font-weight('semi');
         line-height: 16px;
         text-align: center;
+    }
+    &__wrapper {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        z-index: 1;
+        width: 290px;
+        background: $white-color;
+        padding: 15px;
+        transform: scale3d(0,0,0);
+        opacity: 0;
+        pointer-events: none;
+        &_state {
+            &-opened {
+                opacity: 1;
+                transform: scale3d(1,1,1);
+                pointer-events: auto;
+            }
+        }
     }
 }
