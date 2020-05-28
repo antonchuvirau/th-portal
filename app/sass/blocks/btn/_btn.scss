@@ -37,8 +37,8 @@
         pointer-events: none;
         cursor: not-allowed;
     }
-    &_action {
-        &-cancel {
+    &_style {
+        &-secondary {
             background: $white-color;
             box-shadow: 0 4px 15px 0 rgba($secondary-color, 0.15);
             color: $primary-color-lighter;
