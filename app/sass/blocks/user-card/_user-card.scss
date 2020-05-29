@@ -1,7 +1,7 @@
 .user-card {
-    padding: 30px 40px;
+    padding: 30px 25px;
     border-radius: 16px;
-    border-left: 16px solid $primary-color-lighter;
+    border-left: 15px solid $primary-color-lighter;
     &__value {
         margin: 0;
         @include font-weight('thin');
@@ -16,8 +16,30 @@
         @include font-weight('medium');
     }
     &__info {
+        @include flex(row, flex-start, flex-start);
+        flex-wrap: wrap;
         margin-top: 30px;
+        padding-top: 20px;
         border-top: 1px solid $gray-color;
+        &-item {
+            margin: 0;
+            margin-top: 5px;
+            font-size: 1.4rem;
+            line-height: 1.2;
+            @include font-weight('medium');
+            text-transform: uppercase;
+            margin-right: 30px;
+            white-space: nowrap;
+            &-value {
+                display: block;
+                font-size: 1.6rem;
+                @include font-weight('thin');
+                text-transform: none;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
     &__options {
         margin-top: 25px;
