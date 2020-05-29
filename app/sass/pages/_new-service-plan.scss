@@ -1,0 +1,19 @@
+.new-service-plan {
+    &-template {
+        &__user-card {
+            margin-top: 30px
+        }
+    }
+}
+
+.service-plan-section {
+    &__header {
+        border-bottom: none;
+        padding-bottom: 0;
+        margin-bottom: 20px;
+    }
+    &__grid {
+        border-radius: 16px;
+        padding: 25px;
+    }
+}

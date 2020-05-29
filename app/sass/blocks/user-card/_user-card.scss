@@ -1,0 +1,18 @@
+.user-card {
+    padding: 30px 40px;
+    border-radius: 16px;
+    border-left: 16px solid $primary-color-lighter;
+    &__value {
+        margin: 0;
+        @include font-weight('thin');
+        line-height: 1.19;
+        margin-bottom: 2px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__name {
+        font-size: 3.2rem;
+        @include font-weight('medium');
+    }
+}

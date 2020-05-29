@@ -1,0 +1,71 @@
+.service-plan {
+    @include flex(column, stretch, flex-start);
+    padding: 15px;
+    border: 1px solid $primary-color-lightest;
+    border-radius: 6px;
+    height: 100%;
+    cursor: pointer;
+    &_state {
+        &-active {
+            box-shadow: inset 0 4px 15px 0 rgba($secondary-color, .15);
+            background: $primary-color-lightest;
+            border-color: $white-color;
+        }
+    }
+    &__name {
+        margin: 0;
+        font-size: 2rem;
+        @include font-weight('semi');
+        line-height: 1.2;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    &__level {
+        display: block;
+        &-plus {
+            color: map-get($plans-levels, 'plus');
+        }
+        &-pro {
+            color: map-get($plans-levels, 'pro');
+        }
+    }
+    &__content {
+        margin-top: auto;
+        margin-bottom: 25px;
+        & p {
+            margin: 0;
+            font-size: 2rem;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        & ul {
+            & li {
+                line-height: 1.2;
+                font-size: 1.5rem;
+                @include font-weight('thin');
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    &__price {
+        margin: 0;
+        font-size: 2rem;
+        line-height: 1;
+        color: $primary-color-lighter;
+        & strong {
+            font-size: 4.8rem;
+            @include font-weight('regular');
+        }
+        &-note {
+            display: block;
+            font-size: 1.6rem;
+            @include font-weight('medium')
+        }
+    }
+}

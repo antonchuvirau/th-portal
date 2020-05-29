@@ -16,8 +16,8 @@ sass.compiler = require('node-sass');
 gulp.task('styles', function(){
     return gulp.src('app/sass/*.scss')
     .pipe(sass())
-    .pipe(concat('styles.css'))
     .pipe(postcss([autoprefixer()]))
+    .pipe(concat('styles.css'))
     .pipe(clean())
     .pipe(gulp.dest('public/css/'))
 });

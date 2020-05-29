@@ -17,12 +17,18 @@
 
 .template {
     &__wrapper {
-        padding-top: 45px;
+        padding: 45px 0;
+        padding-bottom: 32px;
         padding-left: 32px;
     }
     &__header {
         position: relative;
         margin-bottom: 25px;
+        &-desc {
+            margin: 0;
+            @include font-weight('thin');
+            font-size: 1.8rem;
+        }
     }
     &__title {
         font-size: 3.2rem;
@@ -57,7 +63,7 @@
 }
 
 .group {
-    @include flex(row, flex-start, flex-start);
+    @include flex(row, stretch, flex-start);
     &__col {
         flex: 1 1 auto;
         margin-right: 25px;
@@ -112,6 +118,15 @@
             margin-top: 10px;
             line-height: 1.2;
             pointer-events: none;
+        }
+    }
+}
+
+.plans-group {
+    &__col {
+        margin-right: 15px;
+        &:last-child {
+            margin-right: 0;
         }
     }
 }

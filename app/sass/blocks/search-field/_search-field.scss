@@ -12,6 +12,7 @@
         width: 100%;
         max-width: 160px;
         margin-left: 16px;
+        padding: 0 10px;
     }
     &__btn {
         @include flex(row, center, center);

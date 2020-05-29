@@ -17,3 +17,17 @@ notificationBtnElement.addEventListener('click', (event) => {
     notificationBtnElement.classList.toggle('notification__btn_state-active');
     notificationBtnElement.nextElementSibling.classList.toggle('notification__wrapper_state-opened');
 });
+//Service plans
+let servicePlansElements = document.querySelectorAll('.service-plan');
+let servicePlansActiveClass = 'service-plan_state-active';
+servicePlansElements.forEach((item) => {
+    item.addEventListener('click', (event) => {
+        if (item.classList.contains(servicePlansActiveClass)) {}
+        else {
+            servicePlansElements.forEach((item) => {
+                item.classList.remove(servicePlansActiveClass);
+            });
+            item.classList.add(servicePlansActiveClass);
+        }
+    });
+});

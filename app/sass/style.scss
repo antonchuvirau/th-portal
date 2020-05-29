@@ -26,13 +26,16 @@
 'blocks/input-field/input-field',
 'blocks/section/section',
 'blocks/table-filter/table-filter',
-'blocks/select/select';
+'blocks/select/select',
+'blocks/user-card/user-card',
+'blocks/service-plan/service-plan';
 // 5. Pages
 @import 'pages/sign_in',
 'pages/customers',
 'pages/add-customer',
 'pages/customer-details',
-'pages/service-plans';
+'pages/service-plans',
+'pages/new-service-plan';
 // 6. Themes
 @import 'themes/default',
 'themes/media';
