@@ -3,18 +3,21 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
+const postcss = require('gulp-postcss');
 const clean = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const babel = require('gulp-babel');
+const autoprefixer = require('autoprefixer');
 const browserSync = require('browser-sync').create();
 const del = require('del');
-const combine = require('stream-combiner2').obj;
 
 sass.compiler = require('node-sass');
 
 gulp.task('styles', function(){
     return gulp.src('app/sass/*.scss')
-    .pipe(combine(sass(), concat('styles.css')))
+    .pipe(sass())
+    .pipe(concat('styles.css'))
+    .pipe(postcss([autoprefixer()]))
     .pipe(clean())
     .pipe(gulp.dest('public/css/'))
 });
