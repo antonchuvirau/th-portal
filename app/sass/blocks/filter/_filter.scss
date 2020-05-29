@@ -1,4 +1,4 @@
-.table-filter {
+.filter {
     @include flex(row, stretch, flex-start);
     &__item {
         margin-right: 15px;

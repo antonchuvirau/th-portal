@@ -16,4 +16,11 @@
         border-radius: 16px;
         padding: 25px;
     }
+    &__options {
+        margin-top: 25px;
+        @include flex(row, flex-end, flex-start);
+    }
+    &__btn {
+        margin-left: 15px;
+    }
 }
