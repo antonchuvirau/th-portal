@@ -1,0 +1,30 @@
+.widget {
+    margin-top: 40px;
+    &__header {
+        @include flex(row, center, flex-start);
+        margin-bottom: 25px;
+        &-options {
+            margin-left: auto;
+            &-note {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 15px;
+                @include font-weight('medium');
+                color: $red-color;
+            }
+        }
+    }
+    &__list {
+        &-item {
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__title {
+        margin: 0;
+        font-size: 3.2rem;
+        @include font-weight('thin');
+    }
+}
