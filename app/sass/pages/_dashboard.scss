@@ -1,0 +1,11 @@
+.dashboard-template {
+    &__links {
+        margin-bottom: 25px;
+        &-item {
+            width: 100%;
+            max-width: 160px;
+            padding: 0 10px;
+            font-size: 1.6rem;
+        }
+    }
+}

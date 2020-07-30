@@ -36,6 +36,14 @@
         @include font-weight('thin');
         margin: 0;
         text-transform: capitalize;
+        &_position {
+            &-center {
+                text-align: center;
+            }
+        }
+        & span {
+            @include font-weight('medium');
+        }
     }
     &__prev-page-btn {
         position: absolute;
@@ -47,6 +55,9 @@
     }
     &__section {
         margin-top: 40px;
+    }
+    &__cta {
+        box-shadow: 0 4px 15px 0 rgba($secondary-color, 0.15);
     }
 }
 
@@ -84,6 +95,11 @@
         margin-right: 15px;
         &:last-child {
             margin-right: 0;
+        }
+    }
+    &_content {
+        &-between {
+            justify-content: space-between;
         }
     }
 }
