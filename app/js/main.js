@@ -8,7 +8,13 @@ let eventsCarouselElement = document.querySelector('.events-carousel__container'
 
 document.addEventListener('DOMContentLoaded', function() {
     //Init carousel
-    new Swiper(eventsCarouselElement, {});
+    new Swiper(eventsCarouselElement, {
+        pagination: {
+            el: eventsCarouselElement.nextElementSibling,
+            type: 'bullets',
+            clickable: true
+        }
+    });
 });
 
 //Removing disabled attribute from button

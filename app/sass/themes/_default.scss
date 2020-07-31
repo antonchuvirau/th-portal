@@ -162,4 +162,28 @@
         @include flex(row, flex-start, flex-start);
         flex-wrap: wrap;
     }
+    &__item {
+        width: calc(50% - 7.5px);
+        margin-bottom: 15px;
+        &:nth-child(odd) {
+            margin-right: 15px;
+        }
+    }
+    &__pagination {
+        position: relative !important;
+        padding-top: 10px;
+        width: 100%;
+        @include flex(row, center, center);
+        & .swiper-pagination-bullet {
+            margin-right: 25px;
+            background: $primary-color-lighter;
+            opacity: .3;
+            &:last-child {
+                margin-right: 0;
+            }
+            &-active {
+                opacity: 1;
+            }
+        }
+    }
 }
