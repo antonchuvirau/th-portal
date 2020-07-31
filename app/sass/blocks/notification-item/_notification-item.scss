@@ -1,0 +1,28 @@
+.notification-item {
+    padding: 20px 25px;
+    @include flex(row, center, flex-start);
+    &__name {
+        margin: 0;
+        width: 115px;
+        flex-shrink: 0;
+        line-height: 1.2;
+        color: $primary-color-lighter;
+    }
+    &__desc {
+        margin: 0;
+        padding-left: 15px;
+        margin-left: 15px;
+        line-height: 1.2;
+        @include font-weight('thin');
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background: linear-gradient(rgba(233, 233, 233, 0) 0%, #E9E9E9 49.76%, rgba(233, 233, 233, 0) 100%);
+            top: 0;
+            left: 0;
+        }
+    }
+}
