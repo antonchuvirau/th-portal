@@ -7,9 +7,8 @@ let servicePlansActiveClass = 'service-plan_state-active';
 let eventsCarouselElement = document.querySelector('.events-carousel');
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('../assets/data/events.json')
-        .then(function(response) {response.json()})
-        .then(function(result) {console.log(result)});
+    //Get carousel data
+    
 });
 
 //Removing disabled attribute from button
