@@ -1,0 +1,12 @@
+.calendar-widget {
+    @include flex(row, center, flex-start);
+    background: $white-color;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px 0 rgba(84, 169, 218, .15);
+    &__ui {
+        width: 325px;
+        flex-shrink: 0;
+        margin-right: 25px;
+    }
+}
