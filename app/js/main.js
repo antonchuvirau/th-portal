@@ -1,4 +1,17 @@
 'use strict';
+
+//Variables
+let notificationBtnElement = document.querySelector('.notification__btn');
+let servicePlansElements = document.querySelectorAll('.service-plan');
+let servicePlansActiveClass = 'service-plan_state-active';
+let eventsCarouselElement = document.querySelector('.events-carousel');
+
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('../assets/data/events.json')
+        .then(function(response) {response.json()})
+        .then(function(result) {console.log(result)});
+});
+
 //Removing disabled attribute from button
 document.body.addEventListener('click', (event) => {
     let target = event.target;
@@ -11,15 +24,14 @@ document.body.addEventListener('click', (event) => {
         }
     }
 });
-//Opening notification's list
-let notificationBtnElement = document.querySelector('.notification__btn');
+
+//Opening notifications list
 notificationBtnElement.addEventListener('click', (event) => {
     notificationBtnElement.classList.toggle('notification__btn_state-active');
     notificationBtnElement.nextElementSibling.classList.toggle('notification__wrapper_state-opened');
 });
+
 //Service plans
-let servicePlansElements = document.querySelectorAll('.service-plan');
-let servicePlansActiveClass = 'service-plan_state-active';
 servicePlansElements.forEach((item) => {
     item.addEventListener('click', (event) => {
         if (item.classList.contains(servicePlansActiveClass)) {}
