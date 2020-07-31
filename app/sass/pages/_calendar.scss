@@ -1,0 +1,109 @@
+.options-menu {
+    padding: 25px;
+    background: $white-color;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px 0 rgba($secondary-color, .15);
+    &__top {
+        @include flex(row, center, space-between);
+        margin-bottom: 15px;
+        &-btn {
+            padding: 0;
+            width: calc((100% - 45px)/4);
+        }
+    }
+    &__bottom {
+        @include flex(row, center, space-between);
+        &-btn {
+            width: calc((100% - 15px)/2);
+            padding: 0 15px;
+        }
+    }
+    &__col {
+        padding: 0 15px;
+        margin: 0;
+        width: 50%;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            background: linear-gradient(rgba(233, 233, 233, 0) 0%, #E9E9E9 49.76%, rgba(233, 233, 233, 0) 100%);
+            top: 0;
+            left: 0;
+        }
+        &:first-child {
+            padding-left: 0;
+            &::before {
+                content: none;
+            }
+        }
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+}
+
+.reminders {
+    @include flex(row, center, flex-start);
+    &__form {
+        width: 190px;
+        flex-shrink: 0;
+        margin-right: 15px;
+        &-input {
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 55px;
+                height: 100%;
+                border-radius: 0 6px 6px 0;
+                right: 0;
+                top: 0;
+                background: $primary-color-lighter icon('th-icon-user.svg') no-repeat 50%;
+            }
+            & input {
+                padding-right: 65px;
+            }
+        }
+        &-btn {
+            margin-top: 15px;
+            width: 100%;
+        }
+        & input {
+            height: 55px;
+            width: 100%;
+        }
+    }
+    &__list {
+        width: calc(100% - 190px);
+        @include flex(row, center, flex-start);
+        flex-wrap: wrap;
+        &-item {
+            width: calc((100% - 10px)/2);
+            margin: 0;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            font-size: 1.2rem;
+            @include font-weight('thin');
+            padding: 10px 0;
+            border: 1px solid $gray-color;
+            border-radius: 5px;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            display: block;
+            max-width: 96px;
+            text-overflow: ellipsis;
+            &:nth-child(even) {
+                margin-right: 0;
+            }
+            &:nth-last-child(1) {
+                margin-bottom: 0;
+            }
+            &:nth-last-child(2) {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

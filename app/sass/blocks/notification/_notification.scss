@@ -3,7 +3,7 @@
     &__btn {
         @include flex(row, center, center);
         position: relative;
-        z-index: 2;
+        z-index: 6;
         border: 1px solid transparent;
         &_state {
             &-active {
