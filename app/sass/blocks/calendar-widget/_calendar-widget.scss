@@ -9,4 +9,7 @@
         flex-shrink: 0;
         margin-right: 25px;
     }
+    &__events {
+        width: calc(100% - 350px);
+    }
 }

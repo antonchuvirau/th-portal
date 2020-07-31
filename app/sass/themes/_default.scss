@@ -156,3 +156,10 @@
         margin-bottom: 10px;
     }
 }
+
+.events-carousel {
+    &__slide {
+        @include flex(row, flex-start, flex-start);
+        flex-wrap: wrap;
+    }
+}

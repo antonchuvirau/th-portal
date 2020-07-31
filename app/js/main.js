@@ -4,11 +4,11 @@
 let notificationBtnElement = document.querySelector('.notification__btn');
 let servicePlansElements = document.querySelectorAll('.service-plan');
 let servicePlansActiveClass = 'service-plan_state-active';
-let eventsCarouselElement = document.querySelector('.events-carousel');
+let eventsCarouselElement = document.querySelector('.events-carousel__container');
 
 document.addEventListener('DOMContentLoaded', function() {
-    //Get carousel data
-    
+    //Init carousel
+    new Swiper(eventsCarouselElement, {});
 });
 
 //Removing disabled attribute from button
