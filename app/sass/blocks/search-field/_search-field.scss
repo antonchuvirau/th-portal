@@ -13,6 +13,13 @@
         max-width: 160px;
         margin-left: 16px;
         padding: 0 10px;
+        &_style {
+            &-icon {
+                width: 65px;
+                padding: 0;
+                @include flex(row, center, center);
+            }
+        }
     }
     &__btn {
         @include flex(row, center, center);
