@@ -1,0 +1,22 @@
+.partner-item {
+    @include flex(column, center, center);
+    height: 150px;
+    padding: 0 15px;
+    background: $white-color;
+    border-radius: 16px;
+    text-decoration: none;
+    &__name {
+        display: none;
+        margin: 0;
+        @include font-weight('medium');
+        color: $secondary-color;
+        margin-top: 15px;
+    }
+    &:hover {
+        & .partner-item {
+            &__name {
+                @include flex(row, center, center);
+            }
+        }
+    }
+}
