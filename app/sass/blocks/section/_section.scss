@@ -24,6 +24,15 @@
             margin-bottom: 25px;
             line-height: 1.22;
             @include font-weight('thin');
+            & a {
+                font-size: 1.8rem;
+                @include font-weight('thin');
+                text-decoration: none;
+                color: $secondary-color;
+                &:hover {
+                    color: darken($secondary-color, 5%);
+                }
+            }
             &:last-child {
                 margin-bottom: 0;
             }
@@ -34,6 +43,13 @@
             &-center {
                 text-align: center;
             }
+        }
+        &-note {
+            margin: 0 auto;
+            max-width: 515px;
+            margin-top: 25px;
+            @include font-weight('thin');
+            line-height: 1.3;
         }
     }
 }
