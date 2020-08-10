@@ -23,3 +23,9 @@
     margin: 0;
     list-style-type: none;
 }
+
+.image-border-radius {
+    &-16 {
+        border-radius: 16px;
+    }
+}

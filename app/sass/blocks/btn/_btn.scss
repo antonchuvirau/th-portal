@@ -26,6 +26,16 @@
             font-size: 1.4rem;
             @include font-weight('medium');
         }
+        &-l {
+            height: 80px;
+            padding: 0 45px;
+            border-radius: 6px;
+            font-size: 2rem;
+            @include font-weight('semi');
+            line-height: 80px;
+            text-transform: uppercase;
+            background: linear-gradient(57.2deg, $primary-color-lighter 0%, $secondary-color 86.07%);
+        }
     }
     &:hover {
         background: darken($primary-color-lighter, 3%);

@@ -17,4 +17,23 @@
         margin-left: auto;
         text-transform: capitalize;
     }
+    &__content {
+        & p {
+            margin: 0;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            line-height: 1.22;
+            @include font-weight('thin');
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__footer {
+        &_align {
+            &-center {
+                text-align: center;
+            }
+        }
+    }
 }
